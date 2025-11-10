@@ -4,9 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "react-router build",
+    "cf-typegen": "wrangler types",
+    "deploy": "npm run build && wrangler deploy",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
+    "preview": "npm run build && vite preview",
+    "typecheck": "npm run cf-typegen && react-router typegen && tsc -b""dev": "react-router dev",
+    "__x))start": "react-router-serve ./build/server/index.js",
     "drizzle": "bunx --bun drizzle-kit"
   },
   "dependencies": {
@@ -43,6 +46,7 @@
     "remix-hook-form": "^7.1.0",
     "resend": "^6.1.2",
     "tailwind-merge": "^3.3.1",
+    "wrangler": "^4.46.0",
     "zod": "^4.1.12"
   },
   "devDependencies": {
