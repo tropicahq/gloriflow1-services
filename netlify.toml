@@ -1,5 +1,6 @@
 [build]
 command = "react-router build"
+functions = "netlify/functions"
 publish = "build"
 
 # [dev]
