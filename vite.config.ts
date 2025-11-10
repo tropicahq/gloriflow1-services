@@ -9,7 +9,8 @@ import netlify from "@netlify/vite-plugin";
 export default defineConfig(({ isSsrBuild }) => {
   console.log(`Is SSR build: ${isSsrBuild}`)
   return {
-    plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), netlifyReactRouter(), netlify()],
+    plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), netlifyReactRouter({
+    }), netlify()],
     build: {
       // ssr: true,
       rollupOptions: isSsrBuild
