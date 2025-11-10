@@ -1,5 +1,7 @@
+import "dotenv/config"
 import { Hono } from "hono";
 import { createRequestHandler } from "react-router";
+console.log(JSON.stringify(process.env))
 
 const app = new Hono();
 
