@@ -1,0 +1,62 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1759684132017,
+      "tag": "0000_needy_wrecker",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1759871654169,
+      "tag": "0001_awesome_jack_power",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1761666428630,
+      "tag": "0002_tan_the_anarchist",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1761667166580,
+      "tag": "0003_awesome_hammerhead",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1761667266109,
+      "tag": "0004_dazzling_blue_marvel",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1761754254726,
+      "tag": "0005_glorious_mandroid",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1761819927329,
+      "tag": "0006_pink_ultimates",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1761827228347,
+      "tag": "0007_fuzzy_oracle",
+      "breakpoints": true
+    }
+  ]
+}

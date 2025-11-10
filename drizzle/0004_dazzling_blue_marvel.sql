@@ -1,0 +1,1 @@
+ALTER TABLE "transactions" ALTER COLUMN "flw_payment_transaction_id" DROP NOT NULL;

@@ -1,0 +1,1 @@
+ALTER TABLE "webhook_events" ADD COLUMN "payment_event_id" integer;
