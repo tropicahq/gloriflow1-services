@@ -15,7 +15,7 @@ export default defineConfig(({ isSsrBuild }) => {
       cloudflare({ viteEnvironment: { name: "ssr" } }),
       tailwindcss(), reactRouter(), tsconfigPaths()],
     build: {
-      // ssr: true,
+      ssr: true,
       // rollupOptions: isSsrBuild
       //   ? {
       //     input: './server/app.ts',

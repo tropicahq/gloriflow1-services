@@ -4,13 +4,20 @@
  */ {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "glorifow1-services",
-  "compatibility_date": "2025-10-08",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "compatibility_date": "2024-09-23",
   "main": "./workers/app.ts",
   "vars": {
     "VALUE_FROM_CLOUDFLARE": "Hello from Hono/CF"
   },
   "observability": {
-    "enabled": true
+    "enabled": true,
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    }
   },
   /**
    * Smart Placement
