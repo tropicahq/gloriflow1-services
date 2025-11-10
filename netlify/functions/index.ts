@@ -1,6 +1,7 @@
 import { Hono } from 'hono';
 import { createRequestHandler, RouterContextProvider } from 'react-router';
 
+// import { handle } from '@hono/hono/netlify'
 // @ts-expect-error - virtual module provided by React Router at build time
 // import * as build from 'virtual:react-router/server-build';
 import * as build from "../../build/server/index.js"

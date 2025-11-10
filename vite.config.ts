@@ -2,6 +2,8 @@ import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+
+import { cloudflare } from "@cloudflare/vite-plugin";
 import netlifyReactRouter from "@netlify/vite-plugin-react-router";
 
 import netlify from "@netlify/vite-plugin";
@@ -9,8 +11,9 @@ import netlify from "@netlify/vite-plugin";
 export default defineConfig(({ isSsrBuild }) => {
   console.log(`Is SSR build: ${isSsrBuild}`)
   return {
-    plugins: [tailwindcss(), reactRouter(), tsconfigPaths(), netlifyReactRouter({
-    }), netlify()],
+    plugins: [
+      cloudflare({ viteEnvironment: { name: "ssr" } }),
+      tailwindcss(), reactRouter(), tsconfigPaths()],
     build: {
       // ssr: true,
       // rollupOptions: isSsrBuild

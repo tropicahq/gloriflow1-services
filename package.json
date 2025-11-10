@@ -10,6 +10,7 @@
     "drizzle": "bunx --bun drizzle-kit"
   },
   "dependencies": {
+    "@cloudflare/vite-plugin": "^1.14.0",
     "@hookform/resolvers": "^5.2.2",
     "@neondatabase/serverless": "^1.0.2",
     "@netlify/vite-plugin": "^2.7.11",
