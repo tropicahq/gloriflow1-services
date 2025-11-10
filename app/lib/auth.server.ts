@@ -23,7 +23,7 @@ export const auth = betterAuth({
         // console.log("The magicLink for email " + email + " is " + url + " with token " + token)
         try {
           const res = await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from: 'onboard@gloriflow1-services.space',
             to: email,
             subject: 'Confirm your Gloriflow1 Service account',
             html: `<p>Welcome back, to access your account please click the link to <a href="${url}">verify your account</a></p>`
