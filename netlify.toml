@@ -2,5 +2,15 @@
 command = "react-router build"
 publish = "build/client"
 
+# [dev]
+# command = "react-router dev"
+
 [dev]
-command = "react-router dev"
+command = "react-router-serve ./build/server/index.js"
+port = 8888
+targetPort = 3000
+publish = "build"
+# jwtRolePath = "app_metadata.authorization.roles"
+# jwtSecret = "MY_JWT_SECRET_VALUE"
+autoLaunch = true
+framework = "#custom"
