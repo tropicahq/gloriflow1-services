@@ -19,5 +19,5 @@ export default {
     unstable_viteEnvironmentApi: true,
 
   },
-  presets: [vercelPreset()],
+  // presets: [vercelPreset()],
 } satisfies Config;
