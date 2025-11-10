@@ -13,11 +13,11 @@ export default defineConfig(({ isSsrBuild }) => {
     }), netlify()],
     build: {
       // ssr: true,
-      rollupOptions: isSsrBuild
-        ? {
-          input: './server/app.ts',
-        }
-        : undefined,
+      // rollupOptions: isSsrBuild
+      //   ? {
+      //     input: './server/app.ts',
+      //   }
+      //   : undefined,
     },
     server: {
       allowedHosts: ['retinued-twirly-nahla.ngrok-free.dev', "www.gloriflow1-services.space"]
